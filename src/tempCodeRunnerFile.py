@@ -1,1 +1,1 @@
-print(waypoints)
+print(args)
