@@ -22,3 +22,24 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+month = input("Enter the month: ")
+year = input("Enter the year: ")
+
+
+def print_calendar():
+  if(not(month) and not(year)):
+    d = datetime.today()
+    todays_month = d.month
+    todays_year = d.year  
+    print(calendar.month(todays_year, todays_month, w=0, l=0))
+  elif(month and not(year)):
+    d = datetime.today()
+    todays_year = d.year  
+    print(calendar.month(todays_year, int(month), w=0, l=0))
+  elif(month and year):
+    print(calendar.month(int(year), int(month), w=0, l=0))
+  else:
+    print("Please enter the valid data")
+
+print_calendar()
