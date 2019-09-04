@@ -1,1 +1,1 @@
-print(args)
+int(file)

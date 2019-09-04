@@ -11,7 +11,7 @@ import sys
 # Print out the command line arguments in sys.argv, one per line:
 # YOUR CODE HERE
 
-print("This is the name of the script: ", sys.argv[0])
+print("This is the name of the script: ", sys.argv)
 
 print("Number of arguments: ", len(sys.argv))
 
